@@ -1,9 +1,10 @@
+import { NavBar } from '../widgets/Navbar';
 import './App.scss';
 
 function App() {
   return (
     <div className="app">
-      Hello world!!!
+      <NavBar />
     </div>
   );
 }

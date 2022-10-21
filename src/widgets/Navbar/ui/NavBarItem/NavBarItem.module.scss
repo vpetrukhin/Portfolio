@@ -1,0 +1,16 @@
+.NavBarItem {
+    text-decoration: none;
+    color: var(--color-white);
+    text-align: center;
+    transition: color 0.4s;
+
+    &:hover {
+        color: var(--color-light-green);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .NavBarItem {
+        font: var(--font-s);
+    }
+}
