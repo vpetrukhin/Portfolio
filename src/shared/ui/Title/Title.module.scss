@@ -1,0 +1,23 @@
+.Title {
+    margin: 0;
+    padding: 40px 0 40px 30px;
+    color: var(--color-white);
+    position: relative;
+}
+
+.tag {
+    position: absolute;
+    font: var(--font-m);
+    color: var(--color-grey);
+
+    &_top {
+        left: 0;
+        top: 0;
+    }
+    &_bottom {
+        bottom: 0;
+    }
+    &_left {
+        left: 0;
+    }
+}
