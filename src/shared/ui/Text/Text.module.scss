@@ -1,0 +1,28 @@
+.Text {
+    margin: 0;
+    position: relative;
+}
+
+.Text.vertical {
+    min-height: 90px;
+
+    padding-left: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    font: var(--font-s);
+}
+
+.tag.vertical {
+    position: absolute;
+    left: 0;
+    &.top {
+        top: 0;
+    }
+    &.bottom {
+        bottom: 0;
+    }
+}
