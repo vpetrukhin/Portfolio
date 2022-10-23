@@ -1,0 +1,27 @@
+.Button {
+    width: 200px;
+    height: 200px;
+
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    background: none;
+
+    transition: all 0.5s;
+
+    &:hover {
+        cursor: pointer;
+        border: none;
+        color: var(--main-bg);
+        background-color: var(--color-light-green);
+    }
+}
+
+.primary {
+    color: var(--color-light-green);
+}
+
+.secondary {
+    color: var(--color-white);
+}
