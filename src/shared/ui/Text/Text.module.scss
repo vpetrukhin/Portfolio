@@ -12,6 +12,13 @@
     align-items: center;
 }
 
+.content {
+    display: inline-block;
+    &.isGreen {
+        color: var(--color-light-green);
+    }
+}
+
 .tag {
     font: var(--font-s);
 }
