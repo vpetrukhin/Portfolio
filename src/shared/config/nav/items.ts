@@ -1,4 +1,4 @@
-import { NavItem } from '../types/NavBar.types';
+import { NavItem } from 'widgets/Navbar/types/NavBar.types';
 
 export enum Sections {
     'MAIN' = 'main',

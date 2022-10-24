@@ -16,6 +16,16 @@
         color: var(--main-bg);
         background-color: var(--color-light-green);
     }
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .primary {

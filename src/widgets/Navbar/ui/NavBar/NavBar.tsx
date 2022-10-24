@@ -1,5 +1,5 @@
-import { classNames } from '../../../../shared/lib/classNames/classNames';
-import { items } from '../../model/items';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { items } from 'shared/config/nav/items';
 import { NavBarItem } from '../NavBarItem/NavBarItem';
 import cls from './NavBar.module.scss';
 
