@@ -1,35 +1,24 @@
-.Text {
-    margin: 0;
-    position: relative;
-}
+// .Text {}
 
-.Text.vertical {
-    min-height: 90px;
-
-    padding-left: 40px;
-
-    display: flex;
-    align-items: center;
-}
-
-.content {
-    display: inline-block;
-    &.isGreen {
-        color: var(--color-light-green);
-    }
-}
-
-.tag {
+.small {
     font: var(--font-s);
 }
+.medium {
+    font: var(--font-m);
+}
+.large {
+    font: var(--font-l);
+}
+.extralarge {
+    font: var(--font-xl);
+}
 
-.tag.vertical {
-    position: absolute;
-    left: 0;
-    &.top {
-        top: 0;
-    }
-    &.bottom {
-        bottom: 0;
-    }
+.primary {
+    color: var(--color-primary);
+}
+.secondary {
+    color: var(--color-secondary);
+}
+.ascent {
+    color: var(--color-ascent);
 }

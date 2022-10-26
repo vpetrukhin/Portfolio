@@ -1,0 +1,37 @@
+.Main {
+    height: 813px;
+
+    padding-bottom: 170px;
+
+    background: url('../../../assets/main-img.png') center/cover no-repeat;
+}
+
+.content {
+    height: calc(100% - 65px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.offer {
+    margin-left: 85px;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 120px;
+    height: 3px;
+    
+    margin-bottom: 25px;
+
+    background-color: var(--color-ascent);
+}
+
+.subTitle {
+    margin: 0;
+    margin-bottom: 25px;
+}

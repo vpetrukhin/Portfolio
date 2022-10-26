@@ -1,11 +1,10 @@
-import { Header } from 'widgets/Header/Header';
+import { Main } from 'sections/Main';
+
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      
-      {/* <Main /> */}
+      <Main />
     </div>
   );
 }
