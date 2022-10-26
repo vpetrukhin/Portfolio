@@ -1,4 +1,4 @@
-import { classNames } from '../../../../shared/lib/classNames/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { NavItem } from '../../types/NavBar.types';
 import cls from './NavBarItem.module.scss';
 
@@ -13,7 +13,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
     return (
         // eslint-disable-next-line jsx-a11y/anchor-has-content
         <a href={`#${item.link}` || '#anchor'} className={classNames(cls.NavBarItem, {}, [className])}>
-            {`//${item.id}.  <${item.text}/>`}
+            {item.text}
         </a>
     );
 };

@@ -1,0 +1,18 @@
+.SocialLinks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.link a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.link img {
+    width: 30px;
+    height: 30px;
+}

@@ -5,27 +5,33 @@ export enum Sections {
     'PORTFOLIO' = 'portfolio',
     'ABOUT' = 'about',
     'CONTACS' = 'contacts',
+    'SKILLS' = 'skills'
 }
 
 export const items: Array<NavItem> = [
     {
         id: "01",
         link: Sections.MAIN,
-        text: 'Начало'
+        text: 'Главное'
     },
     {
         id: "02",
-        link: Sections.PORTFOLIO,
-        text: 'Мои работы'
-    },
-    {
-        id: "03",
         link: Sections.ABOUT,
         text: 'Обо мне'
     },
     {
+        id: "03",
+        link: Sections.SKILLS,
+        text: 'Навыки'
+    },
+    {
         id: "04",
+        link: Sections.PORTFOLIO,
+        text: 'Мои работы'
+    },
+    {
+        id: "05",
         link: Sections.CONTACS,
-        text: 'Связаться со мной'
+        text: 'Связаться'
     },
 ];

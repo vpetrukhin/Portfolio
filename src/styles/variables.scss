@@ -1,32 +1,34 @@
 :root {
     // Colors
-    --main-bg: #020203;
-    --color-light-green: #02f74c;
-    --color-dark-green: #1d5d33;
-    --color-white: #f3f3f4;
-    --color-green: #089729;
-    --color-grey: #A6A9AA;
+    --main-bg: #090A1A;
+    --secondary-bg: #1f2243;
+    --color-primary: #ffffff;
+    --color-secondary: #8B8C94;
+    --color-ascent: #667FFC;
 
-    --font-family: 'JetBrains Mono', monospace;
+    --font-family: 'Inter', sans-serif;
 
     // Font size
-    --font-size-s: 16px;
-    --font-size-m: 20px;
-    --font-size-l: 26px;
-    --font-size-xl: 32px;
+    --font-size-s: 12px;
+    --font-size-m: 18px;
+    --font-size-l: 24px;
+    --font-size-xl: 30px;
 
     // Line-height
-    --line-height-s: 20px;
-    --line-height-m: 26px;
-    --line-height-l: 32px;
-    --line-height-xl: 38px;
+    --line-height-s: 18px;
+    --line-height-m: 24px;
+    --line-height-l: 30px;
+    --line-height-xl: 36px;
 
     // fonts 
-    --font-s: var(--font-size-s)/var(--line-height-s) var(--font-family);
-    --font-m: var(--font-size-m)/var(--line-height-m) var(--font-family);
+    --font-s: 500 var(--font-size-s)/var(--line-height-s) var(--font-family);
+    --font-m: 500 var(--font-size-m)/var(--line-height-m) var(--font-family);
     --font-l: var(--font-size-l)/var(--line-height-l) var(--font-family);
     --font-xl: var(--font-size-xl)/var(--line-height-xl) var(--font-family);
 
     // size
-    --size-container: 1280px;
+    --size-container: 960px;
+
+    // z-index:
+    --zindex-menu: 10;
 }

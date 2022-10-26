@@ -1,11 +1,8 @@
 .Navbar {
-    max-width: var(--size-container);
-    margin: 0 auto;
-    padding-top: 40px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 @media screen and (max-width: 768px) {
