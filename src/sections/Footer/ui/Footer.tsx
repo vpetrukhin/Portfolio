@@ -12,7 +12,7 @@ export const Footer = (props: FooterProps) => {
     const { className } = props;
 
     return (
-        <section id={`#${Sections.CONTACS}`} className={classNames(cls.Footer, {}, [className])}>
+        <section id={Sections.CONTACS} className={classNames(cls.Footer, {}, [className])}>
             <SocialLinks />
             <ul className={cls.contacs}>
                 <li className={cls.contact}>
