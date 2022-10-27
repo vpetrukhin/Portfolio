@@ -12,3 +12,10 @@
     margin: 0;
     list-style: none;
 }
+
+@media screen and (max-width: 450px) {
+    .Footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

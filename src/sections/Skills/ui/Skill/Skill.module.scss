@@ -26,3 +26,25 @@
 .active {
     background-color: var(--color-ascent);
 }
+
+
+@media screen and (max-width: 780px) {
+    .Skill p {
+        font: var(--font-s);
+    }
+    .rounds {
+        gap: 10px;
+    }
+    .round {
+        width: 15px;
+        height: 15px;
+        font-size: 0;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .round {
+        width: 5px;
+        height: 5px;
+    }
+}

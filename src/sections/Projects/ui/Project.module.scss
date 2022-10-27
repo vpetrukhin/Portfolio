@@ -9,6 +9,7 @@
 
 .projects {
     max-width: 960px;
+    width: 90%;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -24,4 +25,18 @@
     border-radius: 10px;
     font: var(--font-m);
     text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
