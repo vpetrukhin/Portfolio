@@ -13,7 +13,7 @@ export const About = (props: AboutProps) => {
     const { className } = props;
 
     return (
-        <section id={`#${Sections.ABOUT}`} className={classNames(cls.About, {}, [className])}>
+        <section id={Sections.ABOUT} className={classNames(cls.About, {}, [className])}>
             <Title className={cls.title} text="ОБО МНЕ" theme={TitleTheme.SECTION} />
             <div className={cls.content}>
                 <div className={cls.avatar}>

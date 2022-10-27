@@ -11,7 +11,7 @@ export const Project = (props: ProjectProps) => {
     const { className } = props;
 
     return (
-        <section id={`#${Sections.PORTFOLIO}`} className={classNames(cls.Project, {}, [className])}>
+        <section id={Sections.PORTFOLIO} className={classNames(cls.Project, {}, [className])}>
             <Title className={cls.title} text="ПРОЕКТЫ" theme={TitleTheme.SECTION} />
             <ul className={cls.projects}>
                 <li className={cls.project}>Проект</li>

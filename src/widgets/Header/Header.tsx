@@ -21,12 +21,18 @@ export const Header = (props: HeaderProps) => {
     }, []);
 
     useEffect(() => {
-        window.addEventListener('hashchange', onMenuClose);
+        window.addEventListener('hashchange', onClickItemClose);
 
         return () => {
-            window.removeEventListener('hashchange', onMenuClose);
+            window.removeEventListener('hashchange', onClickItemClose);
         }
     }, [])
+
+    const onClickItemClose = () => {
+        if (document.documentElement.clientWidth < 640) {
+            setIsMenuOpen(false);
+        }
+    }
 
     const onBurgerClick = () => {
         setIsMenuOpen(true)

@@ -12,7 +12,7 @@ export const Skills = (props: SkillsProps) => {
     const { className } = props;
 
     return (
-        <section id={`#${Sections.SKILLS}`} className={classNames(cls.Skills, {}, [className])}>
+        <section id={Sections.SKILLS} className={classNames(cls.Skills, {}, [className])}>
             <Title className={cls.title} text="НАВЫКИ" theme={TitleTheme.SECTION} />
             <div className={cls.content}>
                 <Skill item={{

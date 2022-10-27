@@ -14,7 +14,7 @@ export const Main = (props: MainProps) => {
     const { className } = props;
 
     return (
-        <section id={`#${Sections.MAIN}`} className={classNames(cls.Main, {}, [className])}>
+        <section id={Sections.MAIN} className={classNames(cls.Main, {}, [className])}>
             <Header />
             <div className={cls.content}>
                 <div className={cls.offer}>
