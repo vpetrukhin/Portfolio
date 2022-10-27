@@ -1,5 +1,6 @@
 import { About } from 'sections/About';
 import { Main } from 'sections/Main';
+import { Project } from 'sections/Projects';
 import { Skills } from 'sections/Skills';
 
 
@@ -9,6 +10,7 @@ function App() {
       <Main />
       <About />
       <Skills />
+      <Project />
     </div>
   );
 }

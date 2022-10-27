@@ -1,0 +1,27 @@
+.Project {
+    padding-bottom: 50px;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.projects {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.project {
+    padding: 27px 40px;
+    background-color: var(--color-ascent-disabled);
+    color: var(--color-ascent);
+    border-radius: 10px;
+    font: var(--font-m);
+    text-align: center;
+}
