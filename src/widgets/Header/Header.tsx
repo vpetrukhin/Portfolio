@@ -14,28 +14,17 @@ export const Header = (props: HeaderProps) => {
     const { className } = props;
 
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-    const menuRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        setIsMenuOpen(document.documentElement.clientWidth > 640);
-    }, []);
-
-    useEffect(() => {
-        window.addEventListener('hashchange', onClickItemClose);
+        window.addEventListener('hashchange', onMenuClose);
 
         return () => {
-            window.removeEventListener('hashchange', onClickItemClose);
+            window.removeEventListener('hashchange', onMenuClose);
         }
     }, [])
 
-    const onClickItemClose = () => {
-        if (document.documentElement.clientWidth < 640) {
-            setIsMenuOpen(false);
-        }
-    }
-
     const onBurgerClick = () => {
-        setIsMenuOpen(true)
+        setIsMenuOpen(true);
     };
 
     const onMenuClose = () => {
@@ -46,15 +35,15 @@ export const Header = (props: HeaderProps) => {
     return (
         <header className={classNames(cls.header, {}, [className])}>
             <div className={cls.logo}>VP</div>
-            {isMenuOpen && (
-                <div ref={menuRef} className={cls.menu}>
-                    <Button className={cls.closeBtn} theme={ButtonTheme.clear} onClick={onMenuClose}>
-                        <img src={close} alt="close" />
-                    </Button>
-                    <NavBar className={cls.navbar} />
-                    <SocialLinks className={cls.sidebar} />
-                </div>
-            )}
+            <div className={classNames(cls.menu, {
+                [cls.menuActive]: isMenuOpen
+            }, [])}>
+                <Button className={cls.closeBtn} theme={ButtonTheme.clear} onClick={onMenuClose}>
+                    <img src={close} alt="close" />
+                </Button>
+                <NavBar className={cls.navbar} />
+                <SocialLinks className={cls.sidebar} />
+            </div>
             
             <Button onClick={onBurgerClick} className={cls.burger} theme={ButtonTheme.clear}>
                 <span className={cls.burger_line} />
