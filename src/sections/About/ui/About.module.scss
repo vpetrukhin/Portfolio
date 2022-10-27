@@ -1,0 +1,31 @@
+.About {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.content {
+    max-width: 975px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    border-radius: 10px;
+    border: 3px dashed var(--color-ascent);
+}
+
+.avatarImg {
+    border-radius: 10px;
+    transform: translate(15px, -15px);
+}
+
+.description {
+    width: 500px;
+}
