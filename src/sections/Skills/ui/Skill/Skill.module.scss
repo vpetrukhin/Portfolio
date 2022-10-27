@@ -1,0 +1,28 @@
+.Skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rounds {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--color-ascent-disabled);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    background-color: var(--color-ascent);
+}
