@@ -1,7 +1,7 @@
 import { About } from 'sections/About';
 import { Footer } from 'sections/Footer';
 import { Main } from 'sections/Main';
-import { Project } from 'sections/Projects';
+import { Projects } from 'sections/Projects';
 import { Skills } from 'sections/Skills';
 
 
@@ -11,7 +11,7 @@ function App() {
       <Main />
       <About />
       <Skills />
-      <Project />
+      <Projects />
       <Footer />
     </div>
   );
